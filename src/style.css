@@ -1,0 +1,67 @@
+body {
+  background-color: #373739;
+  color: white;
+  overflow: hidden;
+  font: menu;
+}
+
+.panel {
+  min-width: 45%;
+  min-width: 480px
+}
+
+.contenedor {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.title {
+  background-color: chocolate;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.panel {
+  width: 45%;
+  height: 100%;
+}
+
+#editor {
+  height: 90%;
+  overflow-y: scroll;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+#preview {
+  height: 90%;
+  overflow-y: scroll;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor {
+    height: auto;
+    width: 100%;
+  }
+  .panel {
+    height: 100vh;
+    width: 100%;
+  }
+
+  #editor, #preview {
+    height: 95%;
+    text-align: left;
+    padding: 10px;
+  }
+
+}
